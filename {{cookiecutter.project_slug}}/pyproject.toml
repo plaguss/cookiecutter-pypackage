@@ -1,0 +1,37 @@
+[build-system]
+requires = ["flit_core >=2,<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "{{ cookiecutter.project_slug }}"
+author = "{{ cookiecutter.full_name.replace('\"', '\\\"') }}"
+author-email = "{{ cookiecutter.email }}"
+home-page = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
+requires-python=">=3.8"
+license = "MIT"
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.8"
+]
+description-file = "README.md"
+
+[tool.flit.metadata.requires-extra]
+test = [
+    "pytest==6.2.3",
+    "pytest-cov==2.11.1"
+]
+doc = [
+    "sphinx",
+    "sphinx-rtd-theme"
+]
+dev = [
+    "isort",
+    "black",
+    "mypy",
+    "nox"
+]
+
+[tool.flit.metadata.urls]
+Documentation = "https://{{ cookiecutter.project_slug }}.readthedocs.io"
+Repository = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"

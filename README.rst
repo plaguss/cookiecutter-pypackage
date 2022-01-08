@@ -3,7 +3,7 @@ Cookiecutter PyPackage
 ======================
 
 Template for python packages to be published to PyPI.
-The present features just fit my personal preferences, just watch the original `audreyfeldroy/cookiecutter-pypackage` for many other options.
+The present features just fit my personal preferences, just watch the original `audreyfeldroy/cookiecutter-pypackage`_ for many other options.
 
 Features
 --------

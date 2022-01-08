@@ -2,7 +2,8 @@
 Cookiecutter PyPackage
 ======================
 
-text
+Template for python packages to be published to PyPI.
+The present features just fit my personal preferences, just watch the original `audreyfeldroy/cookiecutter-pypackage` for many other options.
 
 Features
 --------
@@ -32,6 +33,7 @@ Generate a Python package project::
 Then:
 
 * Create a repo and put it there.
+* Create and activate a virtual environment.
 * Install Flit_, and then install the requirements of the project: ``make install``.
 * Register_ your project with PyPI.
 * Add the repo to your `Read the Docs`_ account + turn on the Read the Docs service hook.

@@ -7,10 +7,11 @@ text
 Features
 --------
 
-* Testing setup with ``pytest``.
-* Linting wiht ``black``, import sorting with .
+* Testing setup with Pytest_ and Coverage_.
+* Linting wiht Black_, import sorting with Isort_.
+* Package managing with Flit_.
 * GithubActions_: Simple continuous integration with github actions.
-* Nox_ testing: Setup to easily test for Python 3.8
+* Nox_ testing: Setup to easily test for Python 3.8.
 * Sphinx_ docs: Documentation ready for generation with, for example, `Read the Docs`_
 * Release to PyPI_ when running ``make publish`` or ``flit publish``.
 
@@ -31,7 +32,6 @@ Generate a Python package project::
 Then:
 
 * Create a repo and put it there.
-* Add the repo to your Travis-CI_ account.
 * Install the dev requirements into a virtualenv. (``pip install -r requirements_dev.txt``)
 * Register_ your project with PyPI.
 * Run the Travis CLI command ``travis encrypt --add deploy.password`` to encrypt your PyPI password in Travis config
@@ -101,10 +101,13 @@ make my own packaging experience better.
 
 
 .. _Nox: https://nox.thea.codes/en/stable/
-.. _Github Actions: https://github.com/features/actions
+.. _GithubActions: https://github.com/features/actions
 .. _Sphinx: http://sphinx-doc.org/
 .. _Read the Docs: https://readthedocs.io/
 .. _PyPi: https://pypi.python.org/pypi
 .. _Isort: https://pycqa.github.io/isort/
 .. _Black: https://black.readthedocs.io/en/stable/
 .. _Mypy: https://mypy.readthedocs.io/en/stable/
+.. _Pytest: https://docs.pytest.org/en/6.2.x/contents.html
+.. _Coverage: https://pypi.org/project/pytest-cov/
+.. _Flit: https://flit.readthedocs.io/en/latest/

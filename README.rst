@@ -32,7 +32,7 @@ Generate a Python package project::
 Then:
 
 * Create a repo and put it there.
-* Install the dev requirements into a virtualenv. (``pip install -r requirements_dev.txt``)
+* Install Flit_, and then install the requirements of the project: ``make install``.
 * Register_ your project with PyPI.
 * Run the Travis CLI command ``travis encrypt --add deploy.password`` to encrypt your PyPI password in Travis config
   and activate automated deployment on PyPI when you push a new tag to master branch.
